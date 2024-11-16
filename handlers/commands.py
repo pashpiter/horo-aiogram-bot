@@ -27,6 +27,7 @@ async def command_help(message: Message) -> None:
         '/update для получения нового гороскопа\n'
         '/change_zodiac для изменения знака зодиака\n'
         '/clear_history для удаления истории сообщений'
+        '/real_horoscope для получения реального гороскопа на сегодня'
     )
 
 
@@ -68,6 +69,7 @@ async def command_start_handler(message: Message) -> None:
             '/update для получения нового гороскопа\n'
             '/change_zodiac для изменения знака зодиака\n'
             '/clear_history для удаления истории сообщений'
+            '/real_horoscope для получения реального гороскопа на сегодня'
         )
     else:
         await change_zodiak(message)
